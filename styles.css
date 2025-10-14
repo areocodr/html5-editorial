@@ -1,5 +1,4 @@
-.container {
-  height: 637.5rem;
-  width: 300rem;
-  border: 1px solid black;
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
