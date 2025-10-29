@@ -3,6 +3,11 @@
 * {
   box-sizing: border-box;
 }
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -75,6 +80,10 @@ button {
   cursor: pointer;
 }
 
+div.inner {
+  padding: 0 2em 0.1em 2em;
+}
+
 .banner-text {
   font-family: "Roboto Slab", serif;
   font-size: 1.2rem;
@@ -89,3 +98,67 @@ button {
   padding: 1rem;
   font-size: 1.4rem;
 }
+/* 
+.icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.features article {
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  max-width: 50rem;
+}
+
+.features article .icon {
+  display: block;
+  height: 8rem;
+  line-height: 8rem;
+  width: 8rem;
+  margin-right: 2em;
+  text-align: center;
+}
+
+/* span.icon.fa-gem {
+} 
+
+.features article .icon::before {
+  font-size: 3rem;
+  color: #f56a6a;
+  position: relative;
+  top: 0.05em;
+  display: inline-block;
+  font-style: normal;
+  text-rendering: auto;
+  text-transform: none !important;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
+.fa-gem::before {
+  content: "\f3a5";
+}
+
+.features article .icon::after {
+  content: "";
+  position: absolute;
+  left: 75%;
+  top: 25%;
+  width: 6em;
+  height: 6em;
+  display: block;
+  transform: rotate(45deg);
+  border: 2px solid rgb(210, 215, 217, 0.75);
+  border-radius: 0.25rem;
+  margin: -3em 0 0 -3em;
+} */
