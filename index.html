@@ -167,7 +167,7 @@
             </header>
             <div class="posts container-sm">
               <div class="row">
-                <article class="card col-md">
+                <article class="card col-md border-0">
                   <a href="#" class="image"
                     ><img src="images/pic01.jpg" class="card-img-top" alt=""
                   /></a>
@@ -189,7 +189,7 @@
                     </ul>
                   </div>
                 </article>
-                <article class="card col-md">
+                <article class="card col-md border-0">
                   <a href="#" class="image"
                     ><img src="images/pic02.jpg" class="card-img-top" alt=""
                   /></a>
@@ -212,7 +212,7 @@
                 </article>
               </div>
               <div class="row">
-                <article class="card col-md">
+                <article class="card col-md border-0">
                   <a href="#" class="image"
                     ><img src="images/pic03.jpg" class="card-img-top" alt=""
                   /></a>
@@ -234,7 +234,7 @@
                     </ul>
                   </div>
                 </article>
-                <article class="card col-md">
+                <article class="card col-md border-0">
                   <a href="#" class="image"
                     ><img src="images/pic04.jpg" class="card-img-top" alt=""
                   /></a>
@@ -258,7 +258,7 @@
                 </article>
               </div>
               <div class="row">
-                <article class="card col-md">
+                <article class="card col-md border-0">
                   <a href="#" class="image"
                     ><img src="images/pic05.jpg" class="card-img-top" alt=""
                   /></a>
@@ -281,7 +281,7 @@
                     </ul>
                   </div>
                 </article>
-                <article class="card col-md">
+                <article class="card col-md border-0">
                   <a href="#" class="image"
                     ><img src="images/pic06.jpg" class="card-img-top" alt=""
                   /></a>
@@ -310,123 +310,181 @@
       </div>
 
       <!-- Sidebar -->
-      <div id="sidebar">
-        <div class="inner">
-          <!-- Search -->
-          <section id="search" class="alt">
-            <form method="post" action="#">
-              <input type="text" name="query" id="query" placeholder="Search" />
-            </form>
-          </section>
+      <div
+        id="sidebar"
+        class="navbar navbar-expand-lg bg-body-tertiary fixed-top"
+      >
+        <div class="inner container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
           <!-- Menu -->
-          <nav id="menu">
-            <header class="major">
-              <h2>Menu</h2>
-            </header>
-            <ul class="text-uppercase">
-              <li><a href="index.html">Homepage</a></li>
-              <li><a href="#">Generic</a></li>
-              <li><a href="#">Elements</a></li>
-              <li>
-                <span class="opener">Submenu</span>
+          <div
+            id="menu"
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <!-- Search -->
+            <section id="search" class="alt">
+              <form class="d-flex mt-3" method="post" action="#" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  name="query"
+                  id="query"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </section>
 
-                <ul>
-                  <li><a href="#">Lorem ipsum</a></li>
-                  <li><a href="#">Dolor sit amet</a></li>
-                  <li><a href="#">Tempora asperiores</a></li>
-                  <li><a href="#">Labore suscipit</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Impedit repellat</a></li>
-              <li><a href="#">Tempora maxime</a></li>
-              <li>
-                <span class="opener">Another Submenu</span>
-                <ul>
-                  <li><a href="#">Lorem ipsum</a></li>
-                  <li><a href="#">Dolor sit amet</a></li>
-                  <li><a href="#">Tempora asperiores</a></li>
-                  <li><a href="#">Labore suscipit</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Suscipit voluptas</a></li>
-              <li><a href="#">Quia consequuntur</a></li>
-              <li><a href="#">Neque amet</a></li>
-            </ul>
-          </nav>
-
-          <!-- Posts -->
-          <section>
-            <header class="major">
-              <h2>Ante interdum</h2>
+            <header class="major offcanvas-header">
+              <h2 id="offcanvasNavbarLabel" class="offcanvas-title">Menu</h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </header>
-            <div class="mini-posts">
-              <article>
-                <a href="#" class="image"
-                  ><img src="images/pic07.jpg" alt=""
-                /></a>
+            <div class="offcanvas-body">
+              <ul
+                class="text-uppercase navbar-nav justify-content-end flex-grow-1 pe-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Homepage</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Generic</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Elements</a>
+                </li>
+                <li class="nav-item">
+                  <span class="opener">Submenu</span>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Lorem ipsum</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Dolor sit amet</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Tempora asperiores</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Labore suscipit</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="#">Impedit repellat</a></li>
+                <li class="nav-item"><a href="#">Tempora maxime</a></li>
+                <li>
+                  <span class="opener dropdown-menu">Another Submenu</span>
+                  <ul>
+                    <li><a class="dropdown-item" href="#">Lorem ipsum</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Dolor sit amet</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Tempora asperiores</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Labore suscipit</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a href="#">Suscipit voluptas</a></li>
+                <li class="nav-item"><a href="#">Quia consequuntur</a></li>
+                <li class="nav-item"><a href="#">Neque amet</a></li>
+              </ul>
+
+              <!-- Posts -->
+              <section>
+                <header class="major">
+                  <h2>Ante interdum</h2>
+                </header>
+                <div class="mini-posts">
+                  <article>
+                    <a href="#" class="image"
+                      ><img src="images/pic07.jpg" alt=""
+                    /></a>
+                    <p>
+                      Aenean ornare velit lacus, ac varius enim lorem
+                      ullamcorper dolore aliquam.
+                    </p>
+                  </article>
+                  <article>
+                    <a href="#" class="image"
+                      ><img src="images/pic08.jpg" alt=""
+                    /></a>
+                    <p>
+                      Aenean ornare velit lacus, ac varius enim lorem
+                      ullamcorper dolore aliquam.
+                    </p>
+                  </article>
+                  <article>
+                    <a href="#" class="image"
+                      ><img src="images/pic09.jpg" alt=""
+                    /></a>
+                    <p>
+                      Aenean ornare velit lacus, ac varius enim lorem
+                      ullamcorper dolore aliquam.
+                    </p>
+                  </article>
+                </div>
+                <ul class="actions">
+                  <li><a href="#" class="button text-uppercase">More</a></li>
+                </ul>
+              </section>
+
+              <!-- Section -->
+              <section>
+                <header class="major">
+                  <h2>Get in touch</h2>
+                </header>
                 <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore aliquam.
+                  Sed varius enim lorem ullamcorper dolore aliquam aenean ornare
+                  velit lacus, ac varius enim lorem ullamcorper dolore. Proin
+                  sed aliquam facilisis ante interdum. Sed nulla amet lorem
+                  feugiat tempus aliquam.
                 </p>
-              </article>
-              <article>
-                <a href="#" class="image"
-                  ><img src="images/pic08.jpg" alt=""
-                /></a>
-                <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore aliquam.
+                <ul class="contact">
+                  <li class="fa-solid fa-envelope">
+                    <a href="#">information@untitled.tld</a>
+                  </li>
+                  <li class="fa-solid fa-phone">
+                    <a href="#">(000) 000-0000</a>
+                  </li>
+                  <li class="fa-solid fa-home">
+                    <a href="#"
+                      >1234 Somewhere Road #8254 Nashville, TN 00000-0000</a
+                    >
+                  </li>
+                </ul>
+              </section>
+
+              <!-- Footer -->
+              <footer id="footer">
+                <p class="copyright">
+                  &copy; Untitled. All rights reserved. Design:
+                  <a href="https://html5up.net">HTML5 UP</a>
                 </p>
-              </article>
-              <article>
-                <a href="#" class="image"
-                  ><img src="images/pic09.jpg" alt=""
-                /></a>
-                <p>
-                  Aenean ornare velit lacus, ac varius enim lorem ullamcorper
-                  dolore aliquam.
-                </p>
-              </article>
+              </footer>
             </div>
-            <ul class="actions">
-              <li><a href="#" class="button text-uppercase">More</a></li>
-            </ul>
-          </section>
-
-          <!-- Section -->
-          <section>
-            <header class="major">
-              <h2>Get in touch</h2>
-            </header>
-            <p>
-              Sed varius enim lorem ullamcorper dolore aliquam aenean ornare
-              velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed
-              aliquam facilisis ante interdum. Sed nulla amet lorem feugiat
-              tempus aliquam.
-            </p>
-            <ul class="contact">
-              <li class="fa-solid fa-envelope">
-                <a href="#">information@untitled.tld</a>
-              </li>
-              <li class="fa-solid fa-phone">
-                <a href="#">(000) 000-0000</a>
-              </li>
-              <li class="fa-solid fa-home">
-                <a href="#"
-                  >1234 Somewhere Road #8254 Nashville, TN 00000-0000</a
-                >
-              </li>
-            </ul>
-          </section>
-
-          <!-- Footer -->
-          <footer id="footer">
-            <p class="copyright">
-              &copy; Untitled. All rights reserved. Design:
-              <a href="https://html5up.net">HTML5 UP</a>
-            </p>
-          </footer>
+          </div>
         </div>
       </div>
     </div>
